@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
+  
   def show 
-    # byebug
    @article=Article.find(params[:id])
   end
 
@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
    @article =Article.new(params.require(:article).permit(:title,:description))
    if @article.save
     flash[:notice] = "Article was created successfully."
-#    redirect_to article_path(@article)
+
     redirect_to @article
    else 
     render :new, status: :unprocessable_entity, content_type: "text/html"
@@ -37,6 +37,13 @@ end
     else
       render 'edit'
     end
+  end
+
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to articles_path
   end
 
 end
