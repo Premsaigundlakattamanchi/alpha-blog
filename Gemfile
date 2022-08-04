@@ -41,6 +41,7 @@ gem "jbuilder"
  gem "bcrypt", "~> 3.1.7"
 
  gem 'will_paginate', '~> 3.1.0'
+ gem 'rexml', require: false
  gem 'will_paginate-bootstrap5'
 gem "webpacker", ">= 3"
 

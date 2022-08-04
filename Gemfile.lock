@@ -255,6 +255,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
+  rexml
   sassc-rails
   selenium-webdriver
   sprockets-rails
