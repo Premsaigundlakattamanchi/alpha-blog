@@ -266,7 +266,7 @@ DEPENDENCIES
   web-console
   webdrivers
   webpacker (>= 3)
-  will_paginate (~> 3.1.0)
+  will_paginate (~> 3.1.7)
   will_paginate-bootstrap5
 
 RUBY VERSION
